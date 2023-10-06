@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './card';
+import Nav from './nav';
+import Card2 from './card2';
+import Card3 from './card3';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav/>
+      <div className='border-2 h-screen flex flex-nowrap justify-evenly py-4 bg-stone-300'>
+       <Card/><Card2/><Card3/>
+      </div>
+      
+    </>
   );
 }
 
